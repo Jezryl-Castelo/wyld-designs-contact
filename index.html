@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyld Designs</title>
+    <!-- <script>"https://script.google.com/macros/s/AKfycbyaQd_XYtkzXQgnu1dduG_uO5n3PbHh-T7shg52_PtWPtzC0uhJ/exec"</script> -->
+    <!-- <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script> -->
+
+<!-- <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyaQd_XYtkzXQgnu1dduG_uO5n3PbHh-T7shg52_PtWPtzC0uhJ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  ...
+</script> -->
+
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+    <image class="nav-logo" src="images/w_d_avatar.png"></image>
+    <ul class="nav-links">
+        <li>
+            <a class="nav-link" href="#">ABOUT</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#">WORK</a>
+        </li>
+    </ul>
+</nav>
+<main class="container">
+    <header>
+        <h3 class="hero-title">Readymade branding that captivates</h3>
+    </header>
+    <figure>
+        <img class="hero-image" src="images/wyld_designs_header.png" alt="hero-image">
+    </figure>
+    <button class="etsy-button">
+        <a href="https://www.etsy.com/shop/WyldDesignsCo" class="etsy-text">Explore Designs</a>
+    </button>
+</main>
+
+<section class="about-container">
+    <div class="about-left">
+    <h4 class="about-title">Graphics and illustrations for your design needs</h4>
+    <p class="about-text">Our readymade artwork saves you time and money, so you can get down to business. </p>
+    </div>
+
+    <div class="about-right">
+        <div class="about-card">
+            <h5 class="about-details">Logos</h5>
+            <p class="about-text">Find the logo that calls out your name. Simply browse our collection and when you place an order, leave your business name, and we'll send you a the logo with your business name. </p>
+        </div>
+        <div class="about-card">
+            <h5 class="about-details">Branding Kit</h5>
+            <p class="about-text">A branding kit is your brand identity, all in one place. Choose a logo and we'll add your business name, font, colors, and branding assets.</p>
+        </div>
+        <div class="about-card">
+            <h5 class="about-details">Etsy + Facebook Kit</h5>
+            <p class="about-text">Get your Etsy store and Facebook page up and running. We'll add your company name and you'll have images ready to upload.</p>
+        </div>
+    </div>  
+    </section>
+</section>
+
+<section class="contact-container">
+    <div class="contact-details">
+        <h2 class="contact-title">Let's chat</h2>
+        <p class="form-details">Whether you have a question, want to start a project or simply want to connect.
+        Feel free to send us a message. </p>
+    </div>
+
+    <form class="form"  action="https://api.sheetmonkey.io/form/5SULsbpgVvAxkxmjpy8jZG" method="post">
+        <label class="form-label">Name
+            <br><input type="text" name="Name" required /></br>
+        </label>
+        <label class="form-label">Email 
+            <br><input type="email" name="Email" required /></label>
+        </label>
+        <label class="form-label">Questions & Comments 
+            <br><textarea name="Question" placeholder="Type here..." required ></textarea></label>
+        </label>
+        <input type="hidden" name="Status" value="new" />
+        <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+        <input class="submit-button" type="submit" value="Submit" />
+      </form>
+   
+</section>
+
+
+
+
+    
+</body>
+</html>
