@@ -16,12 +16,12 @@ html {
 nav {
     display: flex;
     justify-content: space-around;
-    height: 5vh;
+    height: 6vh;
     background-color: #D7E3E4;
     box-shadow: 0px 6px 8px rgba(132, 129, 129, 0.25);
     width: 100%;
     position: fixed;
-    padding: 9px;
+    padding: 8px;
 }
 
 .nav-logo {
@@ -40,6 +40,7 @@ nav {
     text-decoration: none;
     font-weight: 600;
     color: #3C444E;
+    padding: 2px 8px 0 8px;
 }
 
 .nav-link:hover {
@@ -54,11 +55,12 @@ nav {
     grid-template-rows: 70% 30%;
     height: 540px;
     margin: 0 auto;
-    padding: 200px 0 0 80px;
+    padding: 200px 0 0 60px;
 }
 
 .hero-title {
     grid-column: 1 / 2;
+    grid-row: 1 / 3;
     width: 100%;
     font-size: 54px;
     line-height: 52px;
@@ -67,6 +69,7 @@ nav {
 }
 
 .hero-image {
+    grid-column: 2 / 3;
     width: 100%;
     min-width: 400px;
 }
@@ -88,11 +91,12 @@ nav {
     text-decoration: none;
 }
 
+
+
 /* ---- About ---- */
 .about-container {
-
     display: flex;
-    padding: 10%;
+    padding: 10% 10% 8% 10%;
     margin-top: 50px;
 }
 
@@ -140,11 +144,10 @@ nav {
     /* background-color: white; */
     width: 70%;
     margin: 0 auto;
-    height: 40vh;
     border-radius: 10px;
-    padding: 16px;
+    padding: 16px 0 80px;
     flex-wrap: wrap;
-    margin: 0 auto;
+    align-content: center;
 }
 
 .contact-title {
@@ -219,3 +222,65 @@ textarea::placeholder {
     color: #fff;
     margin: 0 auto;
 }
+
+/* ---Social Logos --- */
+footer {
+    display: flex;
+    background-color: #D7E3E4;
+    height: 12vh;
+    align-items: center;
+    justify-content: center;
+
+}
+.social-logo {
+    height: 42px; 
+    padding: 0 10px;  
+}
+
+@media screen and (max-width: 793px) {
+   .container {
+       width: auto;
+       height: 640px;
+       grid-template-columns: 400px;
+       grid-template-rows: 180px 340px 100px;
+       grid-template-areas:
+       "title" 
+       "image"
+       "button";     
+       padding-top: 60px; 
+       margin: 0 auto;
+       text-align: center;
+   }
+   .hero-image {
+       grid-area: image;
+       height: 98%;
+       padding-top: 58px;
+       width: auto;
+   }
+   .hero-title {
+       grid-area: title;
+       font-size: 38px;
+       line-height: 40px;
+   }
+   .etsy-button {
+       grid-area: button;
+       margin-top: 20px; 
+   }
+   .about-container {
+       flex-direction: column;
+       width: 100%;
+       margin: 0 auto;
+       padding: 50px 0 20px 20px;
+       }
+    .about-left {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .about-right {
+        width: 100%;
+    }
+    .form {
+        padding-left: -20px;
+    }
+    
+   }
