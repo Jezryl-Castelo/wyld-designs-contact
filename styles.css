@@ -1,6 +1,6 @@
 html {
     color: #3C444E;
-    background-color: #D7E3E4;
+    background-color: #fff;
     background-image: url('./images/background.png');
     background-repeat: no-repeat;
     font-family: 'Catamaran', sans-serif;
@@ -16,10 +16,12 @@ html {
 nav {
     display: flex;
     justify-content: space-around;
-    min-height: 8vh;
+    height: 5vh;
+    background-color: #D7E3E4;
+    box-shadow: 0px 6px 8px rgba(132, 129, 129, 0.25);
     width: 100%;
     position: fixed;
-    padding: 18px;
+    padding: 9px;
 }
 
 .nav-logo {
@@ -40,6 +42,10 @@ nav {
     color: #3C444E;
 }
 
+.nav-link:hover {
+    color: #D62990;
+}
+
 /*  ---- Header ---- */
 .container {
     display: grid;
@@ -48,7 +54,7 @@ nav {
     grid-template-rows: 70% 30%;
     height: 540px;
     margin: 0 auto;
-    padding: 180px 0 0 80px;
+    padding: 200px 0 0 80px;
 }
 
 .hero-title {
