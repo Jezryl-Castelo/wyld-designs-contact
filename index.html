@@ -27,11 +27,14 @@
 <nav class="navbar">
     <image class="nav-logo" src="images/w_d_avatar.png"></image>
     <ul class="nav-links">
-        <li>
+        <!-- <li>
             <a class="nav-link" href="#">ABOUT</a>
+        </li> -->
+        <li>
+            <a class="nav-link" href="https://www.etsy.com/shop/WyldDesignsCo" target="_blank">Work</a>
         </li>
         <li>
-            <a class="nav-link" href="https://www.etsy.com/shop/WyldDesignsCo" target="_blank">WORK</a>
+            <a href="#contact-link" class="nav-link" target="_blank">Contact</a>
         </li>
     </ul>
 </nav>
@@ -52,8 +55,8 @@
 <section class="about-container">
     <div class="about-left">
     <h2 class="about-title">Graphics and hand-drawn illustrations for your design needs</h2>
-    <p class="about-text about-premade">Readymade logos and branding kits are designs that make it easier for you to quickly build your brand identity. Skip the process of creating your identity from scratch and get down to business. </p>
-    <p class="pricing">Logos start at $25</p>
+    <p class="about-text about-premade">Our readymade logos and branding kits make it easier for you to quickly build your brand identity. Skip the process of starting from scratch and get down to business. </p>
+    <p class="pricing">Logos start at <span class="cost">$25</span></p>
     </div>
 
     <div class="about-right">
@@ -63,11 +66,11 @@
         </div>
         <div class="about-card">
             <h5 class="about-details">Branding Kit</h5>
-            <p class="about-text">Don't know where to start? We can help! Our readymade branding kit is your brand identity, all in one place. Personalize  </p>
+            <p class="about-text">Don't know where to start? We can help. Our readymade branding kit is your brand identity, all in one place.</p>
         </div>
         <div class="about-card">
             <h5 class="about-details">Etsy + Facebook Kit</h5>
-            <p class="about-text">Get your Etsy store and Facebook page up and running. We'll add your company name and you'll have images ready to upload.</p>
+            <p class="about-text">Get your Etsy store and Facebook page up and running. We'll add your company name and you'll quickly have images ready to upload.</p>
         </div>
     </div>  
 </section>
@@ -80,14 +83,17 @@
     </div>
 
     <form class="form"  action="https://api.sheetmonkey.io/form/5SULsbpgVvAxkxmjpy8jZG" method="post">
-        <label class="form-label">Name
+        
+        <label id="contact-link" class="form-label">Name
             <br><input type="text" name="Name" required /></br>
         </label>
+       
         <label class="form-label">Email 
             <br><input type="email" name="Email" required /></label>
         </label>
+        
         <label class="form-label">Questions & Comments 
-            <br><textarea name="Question" placeholder="Type here..." required ></textarea></label>
+            <br><textarea name="Question" placeholder="Type here..." class="form-placeholder" required ></textarea></label>
         </label>
         <input type="hidden" name="Status" value="new" />
         <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
