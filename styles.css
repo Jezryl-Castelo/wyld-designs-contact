@@ -23,7 +23,7 @@ nav {
     box-shadow: 0px 6px 8px rgba(132, 129, 129, 0.25);
     width: 100%;
     position: fixed;
-    padding: 8px;
+    padding: 14px;
 }
 
 .nav-logo {
@@ -81,6 +81,7 @@ nav {
     height: 48px;
     border-radius: 40px;
     border: none;
+    margin-top: 5%;
     background: linear-gradient(356deg, rgba(229,51,157,1) 4%, rgba(229,51,157,1) 51%, rgba(214,41,144,1) 96%);
     box-shadow: 0px 6px 8px rgba(132, 129, 129, 0.25); 
 }
