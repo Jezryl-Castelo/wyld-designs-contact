@@ -3,8 +3,8 @@ html {
     background-color: #fff;
     background-image: url('./images/background.png');
     background-repeat: no-repeat;
-    font-family: 'Catamaran', sans-serif;
-    
+    font-family: 'Catamaran',sans-serif;
+    font-weight: 400;
 }
 
 * {
@@ -53,6 +53,7 @@ nav {
 .container {
     display: grid;
     width: 90%;
+    max-width: 2000px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 70% 30%;
     height: 540px;
@@ -74,6 +75,7 @@ nav {
     grid-column: 2 / 3;
     width: 100%;
     min-width: 400px;
+    max-width: 600px;
 }
 .etsy-button {
     grid-column: 1 / 2;
@@ -94,21 +96,19 @@ nav {
     text-decoration: none;
 }
 
-
-
 /* ---- About ---- */
 .about-container {
     display: flex;
-    
     min-width: 350px;
-    padding: 10% 10% 8% 10%;
+    padding: 10% 10% 2% 10%;
     margin-top: 50px;
 }
 
 .about-title {
     width: 80%;
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 42px;
+    font-size: 32px;
 }
 
 .about-left {
@@ -139,9 +139,23 @@ nav {
     font-size: 18px;
     line-height: 26px;
     margin-top: 16px;
-    padding-right: 16px;
     max-width: 400px;
+    padding: 0 40px 32px 0;
 }
+.about-premade {
+    max-width: 600px;
+    padding-bottom: 6px;
+}
+
+.pricing {
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.readymade-text {
+    margin-top: 20px;
+}
+
 
 /* ---- Form ---- */
 .contact-container {
@@ -265,6 +279,7 @@ footer {
        grid-area: title;
        font-size: 38px;
        line-height: 40px;
+       margin: 0 auto;
    }
    .etsy-button {
        grid-area: button;
@@ -272,10 +287,14 @@ footer {
    }
    .about-container {
        flex-direction: column;
-       width: 420px;
+       /* min-width: 100%; */
+    
        margin: 0 auto;
-       padding: 50px 0 20px 20px;
+       padding: 50px 0 20px 50px;
        }
+    .about-title {
+        width: 90%;
+    }
     .about-left {
         width: 100%;
         padding-bottom: 20px;
