@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+
+}
+
 html {
     color: #3C444E;
     background-color: #fff;
