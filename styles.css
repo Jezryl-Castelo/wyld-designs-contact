@@ -8,7 +8,6 @@ html {
 }
 
 * {
-    
 	margin: 0;
 	padding: 0;
     box-sizing: border-box;
@@ -255,7 +254,7 @@ footer {
     display: flex;
     background-color: #D7E3E4;
     height: 12vh;
-    min-width: 500px;
+    min-width: 550px;
     align-items: center;
     justify-content: center;
 }
@@ -266,7 +265,7 @@ footer {
 
 @media screen and (max-width: 793px) {
    .container {
-       width: auto;
+       /* width: auto; */
        height: 640px;
        grid-template-columns: 360px;
        grid-template-rows: 180px 340px 100px;
@@ -313,7 +312,13 @@ footer {
         flex-direction: column;
         margin: 20px auto 80px auto;
         justify-content: center;
-        min-width: 500px;
+        min-width: 550px;
         
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        grid-template-columns: 400px;
     }
 }
