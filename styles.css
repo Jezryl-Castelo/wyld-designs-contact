@@ -8,6 +8,7 @@ html {
 }
 
 * {
+    
 	margin: 0;
 	padding: 0;
     box-sizing: border-box;
@@ -26,7 +27,7 @@ nav {
 }
 
 .nav-logo {
-    height: 32px;
+    height: 42px;
     align-self: center;
 }
 
@@ -98,9 +99,11 @@ nav {
 /* ---- About ---- */
 .about-container {
     display: flex;
-    min-width: 350px;
+    /* min-width: 350px; */
+    width: 100%;
     padding: 10% 10% 2% 10%;
     margin-top: 50px;
+    overflow-x: visible;
 }
 
 .about-title {
@@ -162,12 +165,15 @@ nav {
 /* ---- Form ---- */
 .contact-container {
     display: flex;
-    max-width: 800px;
+    background-color: #D7E3E4;
+    max-width: 850px;
     min-width: 375px;
-    margin: 0 auto;
+    margin: 40px auto;
+    padding-top: 50px;
     border-radius: 10px;
     flex-wrap: wrap;
     align-content: center;
+    box-shadow: 0px 6px 8px rgba(132, 129, 129, 0.25);
 }
 
 .contact-title {
@@ -185,7 +191,7 @@ nav {
 .form-details {
     line-height: 20px;
     margin-top: 20px;
-    padding: 0 20px;
+    padding: 0 30px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -196,7 +202,7 @@ nav {
     display: flex;
     flex-direction: column;
     /* width: 50%; */
-    padding-left: 20px;
+    /* padding-left: 20px; */
     min-width: 400px;
 }
 
@@ -290,10 +296,8 @@ footer {
    }
    .about-container {
        flex-direction: column;
-       /* min-width: 100%; */
-    
-       margin: 0 auto;
-       padding: 50px 0 20px 50px;
+       min-width: 540px;
+       padding-left: 30px;
        }
     .about-title {
         width: 90%;
@@ -309,6 +313,7 @@ footer {
         flex-direction: column;
         margin: 20px auto 80px auto;
         justify-content: center;
+        min-width: 500px;
         
     }
 }
