@@ -269,6 +269,13 @@ footer {
     padding: 0 10px;  
 }
 
+input {
+    font-size: 1.1rem;
+}
+input:focus {
+    font-size: 1.1rem;
+}
+
 @media screen and (max-width: 793px) {
    .container {
        /* width: auto; */
@@ -294,6 +301,9 @@ footer {
        font-size: 38px;
        line-height: 40px;
        margin: 0 auto;
+   }
+   .form {
+        padding-left: 0px;
    }
    .etsy-button {
        grid-area: button;
@@ -326,5 +336,10 @@ footer {
 @media screen and (max-width: 450px) {
     .container {
         grid-template-columns: 400px;
+    }
+    select,
+    textarea,
+    input {
+        font-size: 1.1rem;
     }
 }
