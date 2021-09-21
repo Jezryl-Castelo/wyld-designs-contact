@@ -80,7 +80,7 @@ nav {
 .hero-image {
     grid-column: 2 / 3;
     width: 100%;
-    min-width: 400px;
+    min-width: 320px;
     max-width: 600px;
 }
 .etsy-button {
@@ -172,7 +172,7 @@ nav {
     display: flex;
     background-color: #D7E3E4;
     max-width: 850px;
-    min-width: 375px;
+    min-width: 350px;
     margin: 40px auto;
     padding-top: 50px;
     border-radius: 10px;
@@ -188,7 +188,7 @@ nav {
 }
 .contact-details {
     width: 45%;
-    min-width: 400px;
+    min-width: 320px;
     text-align: center;
     margin-top: 32px;
 }
@@ -208,12 +208,13 @@ nav {
     flex-direction: column;
     /* width: 50%; */
     padding-left: 20px;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 .form-label {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
+    width: 100%;
 }
 
 .form-label input {
@@ -260,7 +261,7 @@ footer {
     display: flex;
     background-color: #D7E3E4;
     height: 12vh;
-    min-width: 550px;
+    min-width: 340px;
     align-items: center;
     justify-content: center;
 }
@@ -277,6 +278,9 @@ input:focus {
 }
 
 @media screen and (max-width: 890px) {
+    html {
+        background-image: none;
+    }
    .container {
        /* width: auto; */
        height: 640px;
@@ -292,9 +296,9 @@ input:focus {
    }
    .hero-image {
        grid-area: image;
-       height: 98%;
+       /* height: 98%; */
        padding-top: 58px;
-       width: auto;
+       /* width: auto; */
    }
    .hero-title {
        grid-area: title;
@@ -311,7 +315,7 @@ input:focus {
    }
    .about-container {
        flex-direction: column;
-       min-width: 540px;
+       min-width: 400px;
        padding-left: 30px;
        }
     .about-title {
@@ -328,14 +332,34 @@ input:focus {
         flex-direction: column;
         margin: 20px auto 80px auto;
         justify-content: center;
-        min-width: 550px;
+        min-width: 320px;
         
     }
 }
 
 @media screen and (max-width: 450px) {
     .container {
-        grid-template-columns: 400px;
+        /* grid-template-columns: 380px; */
+        padding-left: 26px;
+        width: 350px;
+        padding-top: 40px;
+    }
+    .nav-links {
+        margin-right: 45px;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-image {
+        width: 280px;
+        margin-left: -60px;
+        padding-top: 25px;
+    }
+    .etsy-button {
+        margin-top: 0;
+    }
+    .about-text {
+        padding-right: 10px; 
     }
     select,
     textarea,
