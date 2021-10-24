@@ -167,6 +167,56 @@ nav {
     font-family:'Lato', sans-serif ;
 }
 
+/* ---- Download ---- */
+.download-container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.download-title {
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.download-description {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+.download-image {
+    min-width: 350px;
+    align-items: center;
+}
+
+.download-right {
+    width: 50%;
+    min-width: 350px;
+    padding: 60px 0 50px;
+    text-align: center;
+}
+
+.included-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 10px 0 10px;
+}
+.included {
+    text-align: center;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+
 /* ---- Form ---- */
 .contact-container {
     display: flex;
@@ -239,6 +289,19 @@ textarea::placeholder {
     font-family: 'Lato', sans-serif;
     font-size: 1.1rem;
     padding: 8px;
+}
+
+.form-checkbox {
+    display: flex;
+}
+
+.checkbox {
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.checkbox-text {
+    font-size: 1.2rem;
 }
 
 .submit-button {
