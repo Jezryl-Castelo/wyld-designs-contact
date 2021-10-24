@@ -170,7 +170,7 @@ nav {
 /* ---- Download ---- */
 .download-container {
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 auto;
     flex-wrap: wrap;
@@ -194,7 +194,8 @@ nav {
     margin-bottom: 40px;
 }
 .download-image {
-    min-width: 350px;
+    width: 100%;
+    min-width: 360px;
     align-items: center;
 }
 
@@ -393,9 +394,9 @@ input:focus {
     }
     .contact-container {
         flex-direction: column;
-        margin: 20px auto 80px auto;
+        margin: 20px auto 80px 16px;
         justify-content: center;
-        min-width: 320px;
+        min-width: 370px;
         
     }
 }
@@ -418,6 +419,9 @@ input:focus {
         margin-left: -60px;
         padding-top: 25px;
     }
+    .download-container {
+       margin-left: 18px;
+    }
     .etsy-button {
         margin-top: 0;
     }
@@ -428,5 +432,8 @@ input:focus {
     textarea,
     input {
         font-size: 1.1rem;
+    }
+    footer {
+        width: 400px;
     }
 }
