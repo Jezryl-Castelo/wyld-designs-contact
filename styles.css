@@ -394,7 +394,7 @@ input:focus {
     }
     .contact-container {
         flex-direction: column;
-        margin: 20px auto 80px 16px;
+        margin: 20px auto 80px auto;
         justify-content: center;
         min-width: 370px;
         
@@ -419,9 +419,7 @@ input:focus {
         margin-left: -60px;
         padding-top: 25px;
     }
-    .download-container {
-       margin-left: 18px;
-    }
+    
     .etsy-button {
         margin-top: 0;
     }
