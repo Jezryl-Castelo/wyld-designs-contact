@@ -195,7 +195,7 @@ nav {
 }
 .download-image {
     width: 100%;
-    min-width: 350px;
+    min-width: 370px;
     align-items: center;
 }
 
@@ -418,6 +418,9 @@ input:focus {
         width: 280px;
         margin-left: -60px;
         padding-top: 25px;
+    }
+    .download-image {
+        margin-left: 12px;
     }
     
     .etsy-button {
